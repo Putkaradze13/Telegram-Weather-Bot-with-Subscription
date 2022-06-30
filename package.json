@@ -1,0 +1,43 @@
+{
+  "name": "task18-bot3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "start:docker": "docker-compose up",
+    "stop:docker": "docker-compose down",
+    "lint:fix": "eslint --fix .",
+    "lint": "lint-staged",
+    "prepare": "husky install",
+    "format": "node index.js --format"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "dotenv": "^16.0.0",
+    "moment-timezone": "^0.5.34",
+    "mongoose": "^6.2.3",
+    "node-cron": "^3.0.0",
+    "node-telegram-bot-api": "^0.56.0",
+    "pino": "^7.8.1",
+    "pino-pretty": "^7.5.3"
+  }
+}
