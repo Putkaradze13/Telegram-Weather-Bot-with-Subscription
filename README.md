@@ -1,4 +1,4 @@
-# Task19_bot3
+# Weather Bot
 
 **How To Run**
 
@@ -11,7 +11,7 @@ The application runs the bot, which unswers the commands /start, /help, /subscri
 ##env Usage Configuration
 adding new variables must be with the format key=value, delimited by line breaks. Variables in .env files don’t require quotation marks unless there are spaces in the value.
 
-**About me bot**
+**About bot**
 Bot name - @WeatherFocBot,
 Bot tag - t.me/WeatherFocBot
 
